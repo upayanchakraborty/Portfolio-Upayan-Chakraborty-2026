@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upayan Chakraborty — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <!-- <a href="#hero" class="nav-logo">UC.</a> -->
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#activities">Activities</a></li>
+  </ul>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="nav-drawer" id="navDrawer">
+  <ul>
+    <li><a href="#about" class="drawer-link">About</a></li>
+    <li><a href="#experience" class="drawer-link">Experience</a></li>
+    <li><a href="#projects" class="drawer-link">Projects</a></li>
+    <li><a href="#skills" class="drawer-link">Skills</a></li>
+    <li><a href="#activities" class="drawer-link">Activities</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-orb orb1"></div>
+  <div class="hero-orb orb2"></div>
+  <div class="hero-orb orb3"></div>
+  <!-- COINANIMATION -->
+  <div class="animation-container">
+    <div class="y-axis-container">
+      <div class="container">
+        <div class="flash"></div>
+        <div class="coin side">
+          <div class="shine" style="transform:rotate(-30deg);"></div>
+        </div>
+        <div class="side-coin"></div>
+        <div class="coin">
+          <div class="dai">
+            <div class="coin-text">UC</div>
+            <div class="inner-dai">
+              <div class="inner-inner-dai">
+
+              </div>
+            </div>
+            <div class="cutout"></div>
+            <div class="dai-shadow"></div>
+          </div>
+          <div class="shine"></div>
+        </div>
+      </div>
+    </div>
+    <div class="shadow"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-tag">Available · B.Tech CSE · 2026</div>
+    <h1 class="hero-name glitch">
+      <span class="line1">UPAYAN</span>
+      <span class="line2 typing-cursor">CHAKRABORTY</span>
+    </h1>
+    <p class="hero-subtitle">
+      <span>Data Analyst</span> · ML Engineer · <span>Software Developer</span>
+    </p>
+    <div class="hero-contact">
+      <a href="tel:+919088042407">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12.37a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.57a16 16 0 0 0 6.29 6.29l1.63-1.63a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +91 9088042407
+      </a>
+      <a href="mailto:upayanchakraborty2003@gmail.com">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        upayanchakraborty2003@gmail.com
+      </a>
+      <a href="#">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Howrah, West Bengal
+      </a>
+    </div>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#experience" class="btn btn-ghost">Experience</a>
+      <a href="https://drive.google.com/file/d/15Gh5GtF8K3SEN8CstNWu6aSBwnwFRmbi/view?usp=drive_link" target="_blank" class="btn btn-ghost">Resume</a>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span class="scroll-text">Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div>
+      <div class="section-label reveal">Who I Am</div>
+      <h2 class="section-title reveal">About</h2>
+
+      <!-- Photo Gallery — replace src attributes with real image paths -->
+      <div class="photo-gallery">
+        <div class="photo-frame-wrap frame-comic">
+          <div class="photo-frame">
+            <img src="Portfolio_img.jpg" alt="Upayan Chakraborty">
+            <div class="photo-placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+              
+            </div>
+          </div>
+          <div class="frame-caption">uc · 2026</div>
+        </div>
+        <div class="photo-frame-wrap frame-comic">
+          <div class="photo-frame">
+            <img src="Portfolio_img2.jpg" alt="Upayan Chakraborty">
+            <div class="photo-placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </div>
+          </div>
+          <div class="frame-caption">uc · 2025</div>
+        </div>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-card reveal">
+          <div class="stat-num" data-target="15+">15+</div>
+          <div class="stat-label">Datasets Analyzed</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-num" data-target="39+">39+</div>
+          <div class="stat-label">Plant Diseases Detected</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-num" data-target="85%+">85%+</div>
+          <div class="stat-label">Model Accuracy</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-num" data-target="400K+">400K+</div>
+          <div class="stat-label">Dataset Samples</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="about-text reveal">
+        <p>I'm a final-year Computer Science student at MCKV Institute of Engineering, passionate about turning raw data into actionable intelligence. My work spans machine learning, data pipelines, and AI-driven applications.</p>
+        <p>From building CNN-powered agriculture tools to crafting curriculum for data science workshops, I thrive at the intersection of technical precision and clear communication.</p>
+      </div>
+      <div class="edu-cards reveal">
+        <div class="edu-card">
+          <div class="edu-dot"></div>
+          <div>
+            <div class="edu-name">MCKV Institute of Engineering</div>
+            <div class="edu-detail">B.Tech — Computer Science · Howrah, WB</div>
+          </div>
+          <div class="edu-score">7.34 GPA</div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-dot"></div>
+          <div>
+            <div class="edu-name">Vivekananda Academy (CBSE)</div>
+            <div class="edu-detail">Class 12 Science (PCM) · Shrirampur, WB</div>
+          </div>
+          <div class="edu-score">71.33%</div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-dot"></div>
+          <div>
+            <div class="edu-name">Techno India Group Public School</div>
+            <div class="edu-detail">Class 10 · Chinsurah, WB</div>
+          </div>
+          <div class="edu-score">83.83%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-label reveal">Work History</div>
+    <h2 class="section-title reveal">Experience</h2>
+    <div class="exp-timeline">
+
+      <div class="exp-item">
+        <div class="exp-period">Mar 2026 – Present</div>
+        <div class="exp-title">AI Data Annotation Intern <span class="badge">Remote</span></div>
+        <div class="exp-company">Utah Tech Labs · <span>Remote</span></div>
+        <ul class="exp-bullets">
+          <li>Annotating and labelling diverse data types — text, image, audio, and video — in strict accordance with project-specific guidelines to build high-quality training datasets.</li>
+          <li>Ensuring accuracy and quality of annotated datasets through systematic review and cross-validation of annotations.</li>
+          <li>Reviewing and validating annotated data to maintain consistency, resolve ambiguities, and uphold data integrity standards.</li>
+          <li>Maintaining strict confidentiality of data and project information across all assigned tasks and deliverables.</li>
+          <li>Consistently meeting productivity and quality benchmarks set by the team to support timely AI model development.</li>
+        </ul>
+        <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <span class="tag">Data Annotation</span>
+          <span class="tag orange">Quality Assurance</span>
+          <span class="tag green">AI Training Data</span>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-period">Jan 2026 – Mar 2026</div>
+        <div class="exp-title">Spring Intern — Advanced Data Science <span class="badge">ISI Kolkata</span></div>
+        <div class="exp-company">IDEAS-TIH @ Indian Statistical Institute · <span>Kolkata, West Bengal</span></div>
+        <ul class="exp-bullets">
+          <li>Trained at the Institute of Data Engineering, Analytics and Science Foundation — Technology Innovation Hub at Indian Statistical Institute, Kolkata, gaining hands-on exposure to cutting-edge AI topics.</li>
+          <li><strong style="color:var(--accent2)">Large Language Models:</strong> Prompt engineering fundamentals, and real-world applications of LLMs across diverse domains.</li>
+          <li><strong style="color:var(--accent2)">Deep Learning:</strong> Neural network fundamentals, backpropagation and activation functions, and Convolutional Neural Networks (CNN).</li>
+          <li><strong style="color:var(--accent2)">Computer Vision:</strong> Image processing basics, image classification, and object detection overview.</li>
+          <li><strong style="color:var(--accent2)">Agentic AI:</strong> Autonomous AI agents, workflow automation, and practical agent design patterns.</li>
+          <li>Developed the <a href="#projects" style="color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(0,229,255,0.3);transition:border-color 0.2s;">OCEAN Personality Classification Model ↗</a> as the capstone project for the internship.</li>
+        </ul>
+        <div style="margin-top:1rem;display:flex;flex-wrap:wrap;gap:0.5rem;">
+          <span class="tag">LLMs</span><span class="tag">Deep Learning</span><span class="tag">CNNs</span>
+          <span class="tag orange">Computer Vision</span><span class="tag green">Agentic AI</span>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-period">Aug 2025 – Jan 2026</div>
+        <div class="exp-title">Data Analyst & ML Content Writer <span class="badge">Remote</span></div>
+        <div class="exp-company">MacroEdtech™ · <span>Pune, Maharashtra</span></div>
+        <ul class="exp-bullets">
+          <li>Executed end-to-end data pipelines for 15+ real-world datasets, performing rigorous data preprocessing, EDA, and feature engineering to ensure model readiness.</li>
+          <li>Developed and evaluated ML models using both supervised and unsupervised learning techniques, optimizing performance metrics across diverse analytical problems.</li>
+          <li>Authored technical documentation and structured curriculum translating complex data science and ML concepts into accessible educational content for broad audiences.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-period">Jan 2025 – Mar 2025</div>
+        <div class="exp-title">AI & Data Analytics Intern <span class="badge">Top 15</span></div>
+        <div class="exp-company">Edunet Foundation × Microsoft · <span>Bengaluru, Karnataka</span></div>
+        <ul class="exp-bullets">
+          <li>Experimented with Power BI features including DAX functions, Power Query, and report automation — optimizing data transformation speed by <strong style="color:var(--accent)">45%</strong>. Also worked on Microsoft Azure.</li>
+          <li>Enhanced data storytelling skills via visualization best practices, increasing user engagement with reports by <strong style="color:var(--accent)">30%</strong>.</li>
+          <li>Ranked among the top 15 students of the batch across the program cohort.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-wrapper">
+    <div class="section-label reveal">Work Samples</div>
+    <h2 class="section-title reveal">Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card" style="grid-column: span 2;">
+        <div class="project-num">01 — Featured</div>
+        <div class="project-name">AgroCare: Plant Disease Detection & Crop Recommendation</div>
+        <div class="project-desc">An AI-driven agriculture solution integrating plant disease detection and smart crop recommendation. Deployed a Flask web app using CNNs (PyTorch) to identify 39+ plant diseases with treatment suggestions. Integrated IoT-based soil and environmental sensors with ML models for real-time crop recommendations. The system bridges AI with agriculture to help farmers make data-informed decisions.</div>
+        <div class="project-tags">
+          <span class="tag">PyTorch</span>
+          <span class="tag">CNN</span>
+          <span class="tag">Flask</span>
+          <span class="tag green">IoT</span>
+          <span class="tag green">ML</span>
+          <span class="tag orange">Agriculture AI</span>
+        </div>
+        <a href="https://github.com/upayanchakraborty/AgroCare.git" target="_blank" class="project-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">02</div>
+        <div class="project-name">OCEAN Personality Classification Model</div>
+        <div class="project-desc">A multi-output supervised learning framework for Big Five (OCEAN) personality classification using Random Forest ensembles (n_estimators = 200) on the IPIP-NEO 120-item dataset with 400K+ samples. Achieved ~85–90% classification accuracy across all five personality traits.</div>
+        <div class="project-tags">
+          <span class="tag">Random Forest</span>
+          <span class="tag orange">Python</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag green">Machine Learning</span>
+        </div>
+        <a href="https://github.com/upayanchakraborty/Big-Five-Personality-Classification-Model-.git" target="_blank" class="project-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+
+      <div class="project-card" style="background: linear-gradient(135deg, var(--surface2), rgba(0,229,255,0.04));">
+        <div class="project-num">Highlights</div>
+        <div class="project-name" style="color:var(--accent)">Key Technical Achievements</div>
+        <div class="project-desc">
+          Hyperparameter optimization via RandomizedSearchCV (n_iter=10, cv=3) · Comprehensive feature engineering on ~160 variables · Median imputation + StandardScaler normalization · Stratified 80:20 train-test split · Feature importance analysis for interpretability.
+        </div>
+        <div class="project-tags">
+          <span class="tag">GridSearchCV</span>
+          <span class="tag green">Feature Engineering</span>
+          <span class="tag orange">Model Eval</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label reveal">Tech Stack</div>
+  <h2 class="section-title reveal">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-group reveal">
+      <div class="skill-group-title">Languages</div>
+      <div class="skill-pills">
+        <span class="pill">Python</span>
+        <span class="pill">R</span>
+        <span class="pill">Java</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">HTML</span>
+        <span class="pill">CSS</span>
+      </div>
+    </div>
+    <div class="skill-group reveal">
+      <div class="skill-group-title">Frameworks & Libraries</div>
+      <div class="skill-pills">
+        <span class="pill">ReactJS</span>
+        <span class="pill">Flask</span>
+        <span class="pill">PyTorch</span>
+        <span class="pill">scikit-learn</span>
+        <span class="pill">Pandas</span>
+        <span class="pill">NumPy</span>
+      </div>
+    </div>
+    <div class="skill-group reveal">
+      <div class="skill-group-title">Data & Analytics</div>
+      <div class="skill-pills">
+        <span class="pill">Tableau</span>
+        <span class="pill">Power BI</span>
+        <span class="pill">MySQL</span>
+        <span class="pill">MS Access</span>
+        <span class="pill">Google Sheets</span>
+        <span class="pill">MS Excel</span>
+      </div>
+    </div>
+    <div class="skill-group reveal">
+      <div class="skill-group-title">Cloud & Tools</div>
+      <div class="skill-pills">
+        <span class="pill">Microsoft Azure</span>
+        <span class="pill">Power Query</span>
+        <span class="pill">DAX</span>
+        <span class="pill">Git</span>
+        <span class="pill">Jupyter</span>
+      </div>
+    </div>
+    <div class="skill-group reveal">
+      <div class="skill-group-title">ML / AI Domains</div>
+      <div class="skill-pills">
+        <span class="pill">Supervised Learning</span>
+        <span class="pill">Unsupervised Learning</span>
+        <span class="pill">CNNs</span>
+        <span class="pill">EDA</span>
+        <span class="pill">Feature Engineering</span>
+        <span class="pill">Data Pipelines</span>
+      </div>
+    </div>
+    <div class="skill-group reveal">
+      <div class="skill-group-title">Languages Spoken</div>
+      <div class="skill-pills">
+        <span class="pill">Bengali — Fluent</span>
+        <span class="pill">English — Fluent</span>
+        <span class="pill">Hindi — Fluent</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section id="activities">
+  <div class="activities-wrapper">
+    <div class="section-label reveal">Beyond Academics</div>
+    <h2 class="section-title reveal">Activities</h2>
+    <div class="activities-grid">
+      <div class="activity-card reveal">
+        <div class="activity-icon">
+          <img src="images (1).jpg" alt="Startup Club">
+        </div>
+        <div>
+          <div class="activity-title">The Startup Club of MCKVIE</div>
+          <div class="activity-sub">Communications Team Member · MCKVIE, Howrah</div>
+          <div class="activity-period">Mar 2025 – Mar 2026</div>
+        </div>
+      </div>
+      <div class="activity-card reveal">
+        <div class="activity-icon">
+          <img src="LOGO_HeritageClub-150x150.jpeg" alt="Heritage Club">
+        </div>
+        <div>
+          <div class="activity-title">Heritage Club of MCKVIE</div>
+          <div class="activity-sub">Committee Member · MCKVIE, Howrah</div>
+          <div class="activity-period">Jan 2025 – Present</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-wrapper">
+    <div class="section-label reveal">Get In Touch</div>
+    <h2 class="section-title reveal">Connect With Me</h2>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p>I'm currently open to internships, freelance work, and full-time opportunities. Feel free to reach out!</p>
+        <div class="contact-links">
+          <a href="mailto:upayanchakraborty2003@gmail.com">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            upayanchakraborty2003@gmail.com
+          </a>
+          <a href="tel:+919088042407">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12.37a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.57a16 16 0 0 0 6.29 6.29l1.63-1.63a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +91 9088042407
+          </a>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/mwvwrpzl" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+        <div class="form-status" id="formStatus"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-name">UPAYAN CHAKRABORTY</div>
+  <div class="footer-links">
+    <a href="mailto:upayanchakraborty2003@gmail.com">Email</a>
+    <a href="tel:+919088042407">Phone</a>
+    <a href="#hero">Top ↑</a>
+  </div>
+  <div class="footer-copy">© Copyright  2026 UPAYAN CHAKRABORTY | All Rights Reserved </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
